@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!--  Boeing P.26 "Peashooter" : 2015 BARANGER Emmanuel
+
+      sources       : https://en.wikipedia.org/wiki/Boeing_P-26_Peashooter
+
+      Wingspan      :   28 ft 0 in ( 8.50 m   )
+      Lenght        :   23 ft 7 in ( 7.18 m   )
+      Height        :   10 ft 0 in ( 3.04 m   )
+      Empty weight  : 2196 lb      (  996 kg  )
+      Engines       : 1 Pratt & Whitney R-1340-7 "Wasp" radial engine ( 600 hp )
+      Maximum speed :  203 kts     (  377 km/h) at 6000 ft ( 1800 m )
+-->
+
+<airplane mass="3285" version="YASIM_VERSION_CURRENT">
+
+  <!-- Approach configuration -->
+  <approach speed="50" aoa="4" fuel="0.2">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
+    <control-setting axis="/controls/flight/flaps" value="1.0"/>
+  </approach>
+
+  <!-- Cruise configuration -->
+  <cruise speed="150" alt="6000" fuel="0.5">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="1.0"/>
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
+    <control-setting axis="/controls/flight/flaps" value="0.0"/>
+  </cruise>
+
+  <cockpit x="1.285" y="0" z="0.907"/>
+
+  <fuselage ax=" 3.328" ay="0" az="0.004" bx=" 2.891" by="0" bz="0.004" width="1.40" taper="0.75" midpoint="1"/>
+  <fuselage ax=" 2.891" ay="0" az="0.004" bx="-0.323" by="0" bz="0.021" width="1.40" taper="0.75" midpoint="0"/>
+  <fuselage ax="-0.323" ay="0" az="0.021" bx="-3.035" by="0" bz="0.021" width="1.05" taper="0.30" midpoint="0"/>
+
+  <wing x="1.516" y="0" z="-0.241"
+        chord="1.781"
+        length="4.251"
+        taper="0.75"
+        dihedral="2"
+        sweep="-2"
+        camber="0.005">
+        <stall aoa="28" width="1" peak="1.5"/>
+        <flap0 start="0.19" end="0.50" lift="1.3" drag="1.4"/>
+        <flap1 start="0.38" end="0.89" lift="1.2" drag="1.1"/>
+
+        <control-input control="FLAP0" axis="/controls/flight/flaps"/>
+        <control-input control="FLAP1" axis="/controls/flight/aileron" split="true"/>
+        <control-input control="FLAP1" axis="/controls/flight/aileron-trim" split="true"/>
+        
+        <control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"/>
+        <control-output control="FLAP1" side="left" prop="/surface-positions/left-aileron-pos-norm"/>
+        <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"/>
+        
+        <control-speed control="FLAP0" transition-time="5"/>
+      </wing>
+
+  <hstab x="-2.450" y="0" z="0.134"
+         chord="1.40"
+         length="1.50"
+         taper="0.42"
+         sweep="11">
+         <stall aoa="26" width="1" peak="1.5"/>
+         <flap0 start="0" end="1" lift="1.3" drag="1.1"/>
+
+         <control-input control="FLAP0" axis="/controls/flight/elevator"/>
+         <control-input control="FLAP0" axis="/controls/flight/elevator-trim"/>
+
+         <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+  </hstab>
+
+  <vstab x="-2.73" y="0" z="-0.114"
+         chord="1.69"
+         length="1.40"
+         taper="0.46"
+         sweep="18">
+         <stall aoa="22" width="1" peak="1.5"/>
+         <flap0 start="0" end="1" lift="1.2" drag="1.1"/>
+
+         <control-input control="FLAP0" axis="/controls/flight/rudder"  invert="true"/>
+         <control-input control="FLAP0" axis="/controls/flight/rudder-trim"  invert="true"/>
+
+         <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm" min="1" max="-1"/>
+  </vstab>
+
+  <!-- Engines   source       : http://en.wikipedia.org/wiki/Pratt_%26_Whitney_R-1340 
+
+                 name         : Pratt & Whitney R-1340
+                 Power        : 542 hp at 2200 rpm at 5,000
+                 type         : 9 cylinder single-row supercharged air-cooled radial engine
+                 weight       : 805 lb (365 kg)
+                 Displacement : 1343.8 in3 (22.02 l)
+                 Compression  : 6.0:1
+  -->
+  <propeller x="3.074" y="0" z="0.000"
+             mass="805"
+             moment="12"
+             radius="1.4"
+             cruise-speed="150"
+             cruise-rpm="2200"
+             cruise-power="520"
+             cruise-alt="5000"
+             takeoff-power="542"
+             takeoff-rpm="2200">
+             <actionpt x="3.449" y="0" z="0.005"/>
+             <control-input control="ADVANCE" axis="/controls/engines/engine[0]/propeller-pitch"/>
+             <piston-engine eng-power="542"
+                            eng-rpm="2300"
+                            displacement="1343.8"
+                            compression="6.0">
+                            <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle"/>
+                            <control-input control="STARTER" axis="/controls/engines/engine[0]/starter"/>
+                            <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos"/>
+                            <control-input control="MIXTURE" axis="/controls/engines/engine[0]/mixture"/>
+              </piston-engine>
+  </propeller>
+
+  <!-- Left wheel -->
+  <gear x="2.28531" y="0.78027" z="-1.58692" 
+        compression="0.1" 
+        spring="0.8" 
+        on-solid="1" >
+        <control-input axis="/controls/gear/brake-left" control="BRAKE" split="true"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
+        <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+        <control-output control="EXTEND" prop="gear/gear[0]/position-norm"/>
+        <control-speed control="EXTEND" transition-time="4"/>
+  </gear>
+
+  <!-- Right wheel -->
+  <gear x="2.28531" y="-0.78027" z="-1.58692"
+        compression="0.1" 
+        spring="0.8" 
+        on-solid="1" >
+        <control-input axis="/controls/gear/brake-right" control="BRAKE" split="true"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
+        <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+        <control-output control="EXTEND" prop="gear/gear[1]/position-norm"/>
+        <control-speed control="EXTEND" transition-time="6"/>
+  </gear>
+
+  <!-- Tail wheel -->
+  <gear x="-2.67643" y="0" z="-0.42624"
+        compression="0.15" 
+        spring="0.8"
+        on-solid="1"
+        sfric="1"
+        dfric="1">
+        <control-input axis="/controls/flight/rudder" control="STEER" src0="-1.0" src1="1.0" dst0="0.5" dst1="-0.5"/>
+  </gear>
+
+  <tank x="0" y="0" z="-0.310" capacity="580"/>
+
+</airplane>

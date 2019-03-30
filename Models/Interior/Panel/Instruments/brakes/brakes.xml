@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>brakes.ac</path>
+
+  <animation>
+    <object-name>info</object-name>
+    <object-name>brake</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>info</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.004 </red>
+      <green> 0.004 </green>
+      <blue>  0.004 </blue>
+    </emission>
+  </animation>
+
+</PropertyList>

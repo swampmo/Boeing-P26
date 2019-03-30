@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- ASI -->
+  <model>
+    <path>Aircraft/Boeing-P26/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.070 </y-m>
+      <z-m>  0.052 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- MAGNETIC COMPASS -->
+  <model>
+    <path>Aircraft/Boeing-P26/Models/Interior/Panel/Instruments/MagneticCompass/compas.xml</path>
+    <offsets>
+      <x-m> -0.01500 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  0.05060 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- RPM -->
+  <model>
+    <path>Aircraft/Boeing-P26/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
+    <offsets>
+      <x-m> -0.00800 </x-m>
+      <y-m>  0.07000 </y-m>
+      <z-m>  0.05154 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- ALT -->
+  <model>
+    <path>Aircraft/Boeing-P26/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m> -0.070 </y-m>
+      <z-m> -0.040 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- TURN -->
+  <model>
+    <path>Aircraft/Boeing-P26/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m> -0.011 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.040 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- EG -->
+  <model>
+    <path>Aircraft/Boeing-P26/Models/Interior/Panel/Instruments/eg/eg.xml</path>
+    <offsets>
+      <x-m> -0.013 </x-m>
+      <y-m>  0.070 </y-m>
+      <z-m> -0.040 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- FUEL -->
+  <model>
+    <path>Aircraft/Boeing-P26/Models/Interior/Panel/Instruments/fuel/fuel.xml</path>
+    <offsets>
+      <x-m> -0.01 </x-m>
+      <y-m> -0.20 </y-m>
+      <z-m> -0.04 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- CLOCK -->
+  <model>
+    <path>Aircraft/Boeing-P26/Models/Interior/Panel/Instruments/clock/clock.xml</path>
+    <offsets>
+      <x-m> -0.015 </x-m>
+      <y-m>  0.132 </y-m>
+      <z-m>  0.004 </z-m>
+    </offsets>
+  </model>
+
+  <!-- FUEL PRESSURE -->
+  <model>
+    <path>Aircraft/Boeing-P26/Models/Interior/Panel/Instruments/fuelpress/fuel_pressure.xml</path>
+    <offsets>
+      <x-m> -0.015 </x-m>
+      <y-m>  0.159 </y-m>
+      <z-m> -0.059 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- FUEL SELECTOR -->
+  <model>
+    <path>Aircraft/Boeing-P26/Models/Interior/Panel/Instruments/fuel2/fuel-select.xml</path>
+    <offsets>
+      <x-m>  0.020 </x-m>
+      <y-m> -0.030 </y-m>
+      <z-m> -0.170 </z-m>
+      <pitch-deg> -45 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- SWITCH -->
+  <model>
+    <path>Aircraft/Boeing-P26/Models/Interior/Panel/Instruments/switch/switch.xml</path>
+    <offsets>
+      <x-m> -0.01095 </x-m>
+      <y-m> -0.17441 </y-m>
+      <z-m> -0.09128 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- BRAKES -->
+  <model>
+    <path>Aircraft/Boeing-P26/Models/Interior/Panel/Instruments/brakes/brakes.xml</path>
+    <offsets>
+      <x-m> -0.01389 </x-m>
+      <y-m> -0.21644 </y-m>
+      <z-m> -0.10494 </z-m>
+    </offsets>
+  </model>
+  
+</PropertyList>

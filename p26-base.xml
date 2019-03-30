@@ -4,7 +4,7 @@
 
   <sim include="Systems/views.xml">
 
-    <description>Boeing P 26 Peashooter (YASim)</description>
+    <description>Boeing P 26 Peashooter (JSBsim)</description>
     <author>Emmanuel BARANGER (3D/FDM)</author>
     <aircraft-version>0.1</aircraft-version>
     <status>Alpha</status>

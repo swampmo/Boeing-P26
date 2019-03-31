@@ -82,6 +82,9 @@
       <file>Aircraft/Boeing-P26/Nasal/liveries.nas</file>
       <file>Aircraft/Boeing-P26/Nasal/immat.nas</file>
     </p26>
+    <blackout>
+      <file>Aircraft/Boeing-P26/Nasal/blackout.nas</file>
+    </blackout>
   </nasal>
   
 </PropertyList>

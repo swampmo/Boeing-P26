@@ -135,7 +135,7 @@
     </offsets>
   </model>
 
-  <!-- Intérieur -->
+  <!-- Intï¿½ieur -->
   <model>
     <path>Aircraft/Boeing-P26/Models/Interior/interior.xml</path>
   </model>
@@ -216,9 +216,9 @@
   <model>
     <path>Aircraft/Boeing-P26/Models/Effects/ground/ground0.xml</path>
     <offsets>
-      <x-m> -2.28531 </x-m>
-      <y-m> -0.78027 </y-m>
-      <z-m> -1.58692 </z-m>
+      <x-m> -2.1721 </x-m>
+      <y-m> -0.793 </y-m>
+      <z-m> -1.71 </z-m>
     </offsets>
   </model>
 
@@ -226,9 +226,9 @@
   <model>
     <path>Aircraft/Boeing-P26/Models/Effects/ground/ground1.xml</path>
     <offsets>
-      <x-m> -2.28531 </x-m>
-      <y-m>  0.78027 </y-m>
-      <z-m> -1.58692 </z-m>
+      <x-m> -2.1721 </x-m>
+      <y-m>  0.793 </y-m>
+      <z-m> -1.71 </z-m>
     </offsets>
   </model>
   
@@ -236,9 +236,9 @@
   <model>
     <path>Aircraft/Boeing-P26/Models/Effects/ground/ground2.xml</path>   
     <offsets>
-      <x-m>  2.67643 </x-m>
+      <x-m>  2.73778 </x-m>
       <y-m>  0.00000 </y-m>
-      <z-m> -0.42624 </z-m>
+      <z-m> -0.55 </z-m>
     </offsets>
   </model>
   
@@ -269,7 +269,7 @@
     </offsets>
   </model> -->
 
-  <!-- L'hélice --> 
+  <!-- L'hï¿½ice --> 
   <animation>
     <name>HeliceComplete</name>
     <object-name>propdisc</object-name>
@@ -278,7 +278,7 @@
     <object-name>bol</object-name>
   </animation>
 
-  <!-- Séléction de l'objet visible en fonction des rpm -->
+  <!-- Sï¿½ï¿½tion de l'objet visible en fonction des rpm -->
   <animation>
     <type>select</type>
     <object-name>propdisc</object-name>

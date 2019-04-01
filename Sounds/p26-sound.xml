@@ -52,19 +52,19 @@
           </condition>
         <volume>
             <property>engines/engine[0]/mp-inhg</property>
-            <factor>0.026</factor>
+            <factor>0.050</factor>
             <offset>0.2</offset>
         </volume>
         <pitch>
             <property>engines/engine[0]/mp-inhg</property>
             <offset>0.0</offset>
-            <factor>0.033</factor>
+            <factor>0.028</factor>
             <min>0.10</min>
-            <max>1.2</max>
+            <max>0.90</max>
         </pitch>
         <position>
             <x>-3.10</x>
-            <y>8.35</y>
+            <y>0 </y>
             <z>-0.3</z>
         </position>
         <reference-dist>150.0</reference-dist>
